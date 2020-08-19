@@ -52,8 +52,10 @@ class Student
   
   def self.new_from_db
     new_student = self.new
-    id = row[0]
-    name = row[1]
+    new_student.id = row[0]
+    new_student.name = row[1]
+    new_studnet.grade = row[2]
+    new_student
   end
   
   def self.find_by_name
